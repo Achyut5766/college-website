@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Notes Login</title>
+    <link rel="icon" href="C:\Users\Venka\Downloads\KRE.jpg" type="image/icon type">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3440b9; /* Updated background color */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 30px; /* Increased padding for more space */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px; /* Increased max-width */
+            text-align: center;
+            z-index: 1;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px; /* Slightly increased padding */
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 12px; /* Slightly increased padding */
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .login-container input[type="submit"]:hover::before {
+            content: "\2605"; /* Unicode for star symbol */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #fff;
+            opacity: 0;
+            animation: starAnim 0.5s forwards;
+        }
+        @keyframes starAnim {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0;
+            }
+        }
+        .login-container p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .login-container a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            z-index: 2;
+        }
+        .logo-left {
+            left: 10px;
+        }
+        .logo-right {
+            right: 10px;
+        }
+        .logo img {
+            height: 100px;
+            width: auto;
+        }
+        .header {
+            background: #3440b9;
+            color: #fff;
+            padding: 10px 20px;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .header h1, .header h2, .header h3 {
+            margin: 0;
+        }
+        .btn_progress-check{
+            stroke-dashoffset: 34;
+        }
+        .btn--running.btn_progress-fill{
+            stroke-dashoffset: 0;
+            transition: stroke-dashoffset 2s 0.6s linear;
+        }
+        .btn--done.btn_progress-check{
+            stroke-dashoffset: 0;
+            transition: stroke-dashoffset 0.3s 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo logo-left">
+            <img src="C:\Users\Venka\Downloads\KRE.jpg" alt="logo1">
+        </div>
+        <h1>
+            <h3 style="color: rgb(255, 187, 0);">KRE Society's</h3>
+            <h2 style="color: rgb(255, 255, 255);">Karnataka Arts, Science and Commerce College, Bidar</h2>
+            <h2 style="color: rgb(255, 255, 255);"> Computer Science Department</h2>
+            <h2 style="color: rgb(255, 255, 255);">Notes</h2>
+        </h1>
+        <div class="logo logo-right">
+            <img src="C:\Users\Venka\Downloads\KRE2.png" alt="logo2">
+        </div>
+    </header>
+    <div class="login-container">
+        <h2>Login to College Notes</h2>
+        <form action="file:///E:/clg%20files/html%20codes/College%20Website.html" method="post">
+            <label for="username" >Username:</label>
+            <input type="text" aria-placeholder="unsername" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login" class="btn_progress-check">
+        </form>
+        <p>Don't have an account? <a href="file:///E:/clg%20files/html%20codes/registration.html">Register here</a></p>
+        <p><a href="/forgot-password">Forgot password?</a></p>
+    </div>
+</body>
+</html>

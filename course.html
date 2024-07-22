@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Courses</title>
+    <link rel="icon" href="C:\Users\Venka\Downloads\KRE.jpg" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3440b9;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.course {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.header {
+            background: #3440b9;
+            color: #fff;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .header h1 {
+            display: inline-block;
+            margin: 0;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+        }
+        .logo-left {
+            left: 10px;
+        }
+        .logo-right {
+            right: 10px;
+        }
+        .logo img {
+            height: 100px;
+            width: auto;
+            transition: transform 0.3s ease-in-out; /* Added transition property */
+        }
+        .logo img:hover {
+            transform: scale(1.1); /* Zoom in effect on hover */
+        }
+        .header {
+            background: #5a2aca;
+            color: #fff;
+            padding: 10px 0;
+            position: relative;
+            text-align: center;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 20px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+</style>
+
+<body>
+    <header>
+        <header class="header">
+            <div class="logo logo-left">
+                <img src="C:\Users\Venka\Downloads\KRE.jpg" alt="logo1">
+            </div>
+            <h1>
+                <h3 style="color: rgb(255, 187, 0);">KRE Society's</h3>
+                <h2 style="color: rgb(255, 255, 255);">Karnataka Arts, Science and Commerce College, Bidar</h2>
+                <h2 style="color: rgb(255, 255, 255);"> Computer Science Department</h2>
+                <h2 style="color: rgb(255, 255, 255);">Online Courses</h1>
+            </h1>
+            <div class="logo logo-right">
+                <img src="C:\Users\Venka\Downloads\KRE2.png" alt="logo2">
+            </div>
+        </header>
+    </header>
+    <main>
+        <section id="home" class="container">
+            <h2>Welcome to Our College Courses</h2>
+            <p>Explore a variety of courses offered at our college.</p>
+        </section>
+        <section id="courses"  class="container">
+            <h2>Available Courses</h2>
+            <div class="course" class="container">
+                <h3>Learn Essential C Programming Skills</h3>
+                <p>C Programming Courses: Learn C programming for developing efficient software applications. Understand syntax, functions, and data structures in C.</p>
+                <a href="https://www.coursera.org/courses?query=c%20programming"><button>Enroll</button></a>
+            </div>
+            <div class="course" class="container">
+                <h3>Learn Essential C++ Skills</h3>
+                <p>C++ Courses: Explore C++ programming for system and application development. Learn object-oriented programming, memory management, and advanced C++ features.</p>
+                <a href="https://www.coursera.org/courses?query=c%2B%2B"><button>Enroll</button></a>
+            </div>
+            <div class="course" class="container">
+                <h3>Learn Essential Java Skills</h3>
+                <p>Java Courses: Master Java programming for building robust applications. Learn Java syntax, object-oriented programming, and Java development tools.</p>
+                <a href="https://www.coursera.org/courses?query=java"><button>Enroll</button></a>
+            </div>
+            <div class="course" class="container">
+                <h3>Learn Essential Data Structures And Algorithms Skills</h3>
+                <p>Data Structures And Algorithms Courses: Master data structures and algorithms for efficient programming. Learn about arrays, linked lists, trees, and sorting algorithms in various programming languages.</p>
+                <a href="https://www.coursera.org/courses?query=data%20structures%20and%20algorithms"><button>Enroll</button></a>
+            </div>
+            <div class="course" class="container">
+                <h3>Learn Essential Database Management Skills</h3>
+                <p>Database Management Courses: Learn database management techniques for maintaining data integrity and security. Understand database administration, backup, and recovery processes.</p>
+                <a href="https://www.coursera.org/courses?query=database%20management"><button>Enroll</button></a>
+            </div>
+            <div class="course" class="container">
+                <h3>Learn Essential Python Skills</h3>
+                <p>Python Courses: Master Python for versatile programming. Learn Python syntax, data structures, and libraries for web development, data science, and automation.</p>
+                <a href="https://www.coursera.org/courses?query=python"><button>Enroll</button></a>
+            </div>
+            <!-- Add more courses as needed -->
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For more information, contact our admissions office.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 College Courses. All rights reserved.</p>
+    </footer>
+    <script >
+        // script.js
+// Example: Form validation
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    // Validate form fields here
+    // Example:
+    var name = document.getElementById('name').value;
+    if (name === '') {
+        alert('Please enter your name.');
+        event.preventDefault();
+    }
+});
+
+    </script>
+</body>
+</html>
